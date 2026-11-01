@@ -1,0 +1,326 @@
+# The plan for the Sogni World Builders Challenge entry.
+# Reference: docs/world-yaml.md   Craft rules: docs/directing-films.md
+# `node world lint` checks it. `node world next` says what to do now.
+
+id: sogni-worker
+title: "Sogni Worker"
+subtitle: "Three machines that render the worlds"
+story: >
+  A cinematic tour of the Novacore GPU worker fleet: the three rigs whose
+  graphics cards render other people's dreams on the Sogni Supernet. Start in
+  the control room that watches over them, step through the monitors into each
+  machine's realm — the veteran, the survivor, the rookie — then dive down
+  through the silicon itself to the render core where every image begins.
+
+order: free
+start: "control-room"
+canvas: "992x992"
+contentFilter: off
+voices: {}
+music: null
+
+places:
+  - id: control-room
+    photo: photos/01-control-room.jpg
+    still: stills/control-room.jpg
+    title: The Control Room
+    chapter: "Mission control"
+    caption: "Every worker reports here. Pick a screen."
+    seen: >
+      A symmetrical underground control room in deep blue shadow: two long rows
+      of desks with glowing monitors line the left and right walls, their
+      screens alive with cyan and magenta circuitry patterns. At the far end a
+      backlit wall bears a glowing geometric emblem above the word NOVACORE.
+      The dark tiled floor mirrors the light. Lit panels cross the ceiling.
+    loop:
+      frames: 192
+      idea: "The room breathes: screens flicker, light shimmers on the floor."
+      action: >
+        Live-action, cinematic, a wide shot holds the position and framing
+        established by Picture 1: the monitor walls flicker gently as data
+        scrolls, the cyan and magenta glow breathes across the desks, and soft
+        reflections slide across the dark tiled floor.
+      sound: >
+        A low server-room hum under everything; faint clicks and soft electronic
+        chirps drift from the monitor walls; air moves quietly through vents.
+    objects:
+      - id: veteran-bay
+        label: Enter the veteran's bay
+        hint: "x870 · worker #462, the veteran"
+        at: [0.14, 0.30]
+        select:
+          positive: [[0.10, 0.45], [0.16, 0.55]]
+          negative: [[0.30, 0.50]]
+        goes: fleet-veteran
+        film:
+          frames: 243
+          idea: "Through the left monitor wall into the veteran's rig."
+          action: >
+            Live-action, cinematic, a wide shot begins in the position and
+            framing established by Picture 1: the left bank of monitors flares
+            bright cyan. The camera glides forward into the glow and through
+            the screen's surface into a rushing tunnel of cyan and magenta
+            light. The tunnel of light narrows into glowing strips, and the
+            camera settles before a towering graphics card whose light strips
+            burn with the same light: the veteran's rig fills the view.
+          sound: >
+            The room hum rises into a rushing wind of light; a deep electronic
+            swell builds; then heavy fans spin up with a satisfying roar as the
+            rig appears.
+      - id: survivor-rack
+        label: Check the survivor's rack
+        hint: "x570 · worker #463, the survivor"
+        at: [0.86, 0.30]
+        select:
+          positive: [[0.90, 0.45], [0.84, 0.55]]
+          negative: [[0.70, 0.50]]
+        goes: fleet-survivor
+        film:
+          frames: 243
+          idea: "Through the right monitor wall to the battle-worn survivor."
+          action: >
+            Live-action, cinematic, a wide shot begins in the position and
+            framing established by Picture 1. The survivor rack, the right bank of monitors, pulses amber. The camera pushes into the warm glow, through the glass of
+            the screens into a dim service corridor of light. Dust drifts
+            through the beam as the corridor opens onto a rugged, dust-covered
+            graphics card, its status lights blinking amber and cyan in the dark.
+          sound: >
+            A gritty electrical crackle; the hum deepens; dust hisses softly;
+            two heavy fans cough once, then settle into a steady, worn drone.
+      - id: rookie-desk
+        label: Meet the rookie
+        hint: "adam5070 · worker #478, the rookie"
+        at: [0.50, 0.40]
+        select:
+          positive: [[0.50, 0.30]]
+          negative: [[0.50, 0.55]]
+        goes: fleet-rookie
+        film:
+          frames: 243
+          idea: "Through the glowing emblem wall to the rookie's fresh build."
+          action: >
+            Live-action, cinematic, a wide shot begins in the position and
+            framing established by Picture 1. The rookie beacon, the glowing emblem on the far wall,
+            brightens to white. The camera moves down the center aisle
+            toward it and passes through the light of the emblem into clean
+            white brightness. The brightness resolves into a pristine,
+            white-accented gaming PC, its two fans spinning clean and fast,
+            cables dressed in perfect order.
+          sound: >
+            A clean rising tone, like a system booting; the aisle hum fades;
+            crisp new fans spin up smooth and quiet; a soft chime marks arrival.
+      - id: dive-gpu
+        label: Dive inside the GPU
+        hint: "Down to the silicon, where images begin"
+        at: [0.50, 0.70]
+        select:
+          positive: [[0.50, 0.80], [0.44, 0.75]]
+          negative: [[0.50, 0.55]]
+        goes: inside-gpu
+        film:
+          frames: 243
+          idea: "Through the reflective floor, shrinking down into the chip."
+          action: >
+            Live-action, cinematic, a wide shot begins in the position and
+            framing established by Picture 1. The dive into the gpu begins where the glow reflected in the dark floor tiles
+            into the graphics chip, brightens and spreads. The camera tilts down and sinks
+            into the reflection, through layer after layer of light, shrinking
+            as it falls past traces that grow into glowing canyons. It lands
+            gliding above a vast silicon canyon, luminous pathways converging
+            on a brilliant core ahead.
+          sound: >
+            A deep sub-bass drop as the camera sinks; shimmering data-chimes
+            multiply; a vast electrical breathing fills the canyon.
+
+  - id: fleet-veteran
+    photo: photos/02-fleet-veteran.jpg
+    still: stills/fleet-veteran.jpg
+    title: The Veteran
+    chapter: "x870 · worker #462"
+    caption: "The flagship. It has rendered thousands of dreams."
+    seen: >
+      A mighty ASUS ROG Strix graphics card with three large axial fans fills a
+      dark premium PC case: brushed black metal shroud, glowing cyan and
+      magenta RGB light strips along its edges, fan hubs bearing a stylized
+      eye-like logo. Behind it, RAM sticks and a motherboard glow faintly;
+      braided cables run in order. Deep black background, dramatic rim light.
+    loop:
+      frames: 192
+      idea: "The veteran idles, powerful and patient: fans turn, the light strips breathe."
+      action: >
+        Live-action, cinematic, a wide shot holds the position and framing
+        established by Picture 1: the three great fans turn at a steady idle,
+        the cyan and magenta light strips breathe slowly brighter and dimmer,
+        and faint reflections slide across the brushed metal shroud.
+      sound: >
+        Three large fans turn with a deep, even drone; a faint electrical
+        shimmer rides under it; steady and unhurried.
+    objects:
+      - id: return-desk
+        label: Return to the control room
+        hint: "Back to mission control"
+        at: [0.50, 0.20]
+        select:
+          positive: [[0.50, 0.35], [0.42, 0.45]]
+          negative: [[0.50, 0.70]]
+        goes: control-room
+        film:
+          frames: 243
+          idea: "Pulled back through the colored light to the control room."
+          action: >
+            Live-action, cinematic, a wide shot begins in the position and
+            framing established by Picture 1: the light strips flare bright and
+            wash the frame in cyan and magenta. The camera pulls back through
+            the wash of light, through a brief tunnel of color, and the glow
+            resolves into the monitor walls of the control room on both sides,
+            an emblem above writing that reads "NOVACORE" shining at the far end.
+          sound: >
+            The fan drone fades into a rushing wind of light; the server-room
+            hum returns; soft electronic chirps welcome the visitor back.
+
+  - id: fleet-survivor
+    photo: photos/03-fleet-survivor.jpg
+    still: stills/fleet-survivor.jpg
+    title: The Survivor
+    chapter: "x570 · worker #463"
+    caption: "Dust, wear, and still rendering. Respect."
+    seen: >
+      A battle-worn ASUS TUF Gaming graphics card with two large dusty fans:
+      scuffed industrial metal shroud, the letters TUF embossed on its edge,
+      amber and cyan status LEDs blinking along its side. It sits in a dark
+      workstation case with visible braided cables and worn mounts. Moody side
+      light, deep shadows, gritty atmosphere.
+    loop:
+      frames: 192
+      idea: "The survivor keeps working: slow fans, drifting dust, blinking lights."
+      action: >
+        Live-action, cinematic, a wide shot holds the position and framing
+        established by Picture 1: the two dusty fans turn slowly and steadily,
+        fine dust motes drift through the side light, and the amber and cyan
+        status lights blink in their patient rhythm.
+      sound: >
+        Two worn fans keep a rough, honest drone; dust ticks faintly against
+        metal; the lights tick softly with each blink.
+    objects:
+      - id: return-desk
+        label: Return to the control room
+        hint: "Back to mission control"
+        at: [0.50, 0.24]
+        select:
+          positive: [[0.30, 0.45], [0.68, 0.45]]
+          negative: [[0.50, 0.85]]
+          box: [0.12, 0.24, 0.88, 0.70]
+        goes: control-room
+        film:
+          frames: 243
+          idea: "Through the LED glow back to the control room."
+          action: >
+            Live-action, cinematic, a wide shot begins in the position and
+            framing established by Picture 1: the amber status LEDs swell into
+            a warm glow that fills the frame. The camera drifts back through
+            the glow into a dim corridor of light, dust falling away behind,
+            and the corridor opens onto the control room, its monitor walls
+            flickering cyan and magenta.
+          sound: >
+            The worn drone softens into wind; a warm electrical swell carries
+            the camera; the control room hum takes over, steady and clean.
+
+  - id: fleet-rookie
+    photo: photos/04-fleet-rookie.jpg
+    still: stills/fleet-rookie.jpg
+    title: The Rookie
+    chapter: "adam5070 · worker #478"
+    caption: "Fresh silicon. Eager fans. The future of the fleet."
+    seen: >
+      A pristine white-accented dual-fan graphics card in a bright, clean
+      gaming PC: two spotless white fans, subtle blue LED glow at its edge,
+      perfect cable management, a glowing CPU cooler and tidy RAM behind it.
+      Soft studio-like light, crisp details, optimistic fresh atmosphere.
+    loop:
+      frames: 192
+      idea: "The rookie hums with new-machine energy: fast clean fans, gentle glow."
+      action: >
+        Live-action, cinematic, a wide shot holds the position and framing
+        established by Picture 1: the two white fans spin fast and smooth, the
+        blue edge glow pulses gently, and light plays cleanly across the
+        spotless white shroud.
+      sound: >
+        Two new fans sing a smooth, high, quiet whir; a soft electronic pulse
+        keeps time; everything sounds fresh and eager.
+    objects:
+      - id: return-desk
+        label: Return to the control room
+        hint: "Back to mission control"
+        at: [0.50, 0.26]
+        select:
+          positive: [[0.35, 0.58], [0.65, 0.58]]
+          negative: [[0.50, 0.25]]
+          box: [0.10, 0.40, 0.90, 0.78]
+        goes: control-room
+        film:
+          frames: 243
+          idea: "Through the white light back to the control room."
+          action: >
+            Live-action, cinematic, a wide shot begins in the position and
+            framing established by Picture 1: the white case light blooms until
+            the frame is clean brightness. The camera glides back through the
+            brightness, which cools into the blue tones of the control room,
+            and the monitor walls and the glowing emblem resolve ahead.
+          sound: >
+            The eager whir stretches into a smooth glide tone; brightness hums;
+            the control room's deep hum settles in beneath it.
+
+  - id: inside-gpu
+    photo: photos/05-inside-gpu.jpg
+    still: stills/inside-gpu.jpg
+    title: Inside the GPU
+    chapter: "The render core"
+    caption: "Every image you've seen here began as light in this canyon."
+    seen: >
+      A vast canyon of dark silicon: towering transistor-like structures rise
+      on both sides, luminous cyan and magenta circuit traces wind along the
+      canyon floor like rivers, rings and pillars of light stand among them,
+      and at the center a brilliant square render core glows white-hot,
+      pathways of light converging into it from every direction.
+    loop:
+      frames: 192
+      idea: "The chip lives: data rivers flow, the core breathes light."
+      action: >
+        Live-action, cinematic, a wide shot holds the position and framing
+        established by Picture 1: streams of cyan and magenta light flow along
+        the circuit traces toward the render core, the core's glow breathes
+        brighter and dimmer, and the light pillars pulse slowly.
+      sound: >
+        A vast electrical breathing; shimmering data-chimes stream past;
+        deep harmonic tones rise and fall with the core's glow.
+    objects:
+      - id: return-desk
+        label: Pull back to the control room
+        hint: "Rise back up to mission control"
+        at: [0.50, 0.28]
+        select:
+          positive: [[0.50, 0.63]]
+          negative: [[0.50, 0.30]]
+          box: [0.36, 0.54, 0.64, 0.74]
+        goes: control-room
+        film:
+          frames: 243
+          idea: "Rising out of the silicon, back up to the control room."
+          action: >
+            Live-action, cinematic, a wide shot begins in the position and
+            framing established by Picture 1: the render core flares white and
+            the camera rises, the canyon shrinking below into glowing traces,
+            up through layer after layer of light. The light cools and steadies
+            into a reflection, and the camera settles above the dark tiled
+            floor of the control room, the monitor walls flickering around it.
+          sound: >
+            A rising swell of light and chimes; the canyon's breathing fades
+            below; the familiar server-room hum returns as the room resolves.
+
+  - id: finale
+    photo: photos/01-control-room.jpg
+    still: stills/finale.jpg
+    title: The Finale
+    chapter: "Sogni"
+    caption: "The real Sogni logo — the disc that powers every dream."
+    seen: "A dimmed futuristic control room with rows of glowing monitors. In the bottom right corner, the official Sogni disc icon — a dark circle with colorful pixel-swoosh bars — glows softly."
