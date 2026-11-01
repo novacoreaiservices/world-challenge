@@ -1,0 +1,60 @@
+{
+  "key": "inside-gpu-return-desk",
+  "place": "inside-gpu",
+  "object": "return-desk",
+  "model": "sam3_image_segment_bf16",
+  "prompt": {
+    "points": [
+      {
+        "x": 0.5,
+        "y": 0.63,
+        "label": "positive"
+      },
+      {
+        "x": 0.5,
+        "y": 0.3,
+        "label": "negative"
+      }
+    ],
+    "boxes": [
+      {
+        "x0": 0.36,
+        "y0": 0.54,
+        "x1": 0.64,
+        "y1": 0.74
+      }
+    ],
+    "threshold": 0.5,
+    "multimask": true,
+    "maxInstances": 1
+  },
+  "inputsHash": "dbd0ae4c1b9516573e7f28caec6021d6a1ba61426874b37c6cc8f3fdef78a479",
+  "stillSha256": "62c52c32417b3ffef8b9ef266cc9f8524bc46fb9ce0e9132f1e92758a1db636c",
+  "width": 1536,
+  "height": 1536,
+  "status": "completed",
+  "startedAt": "2026-10-31T18:29:55.125Z",
+  "projectId": "1FAB0087-339B-4699-8DB5-B0E433C2FA76",
+  "appId": "sogni-worlds-kit-f57e9db1-7fad-4f5a-aeaa-2de4673897ab",
+  "pid": 5897,
+  "completedAt": "2026-10-31T18:30:08.929Z",
+  "maskSha256": "b2040513fe5d17c838b8f60e334f48c7cd50cfb80e6d67f7486c3852c333e45e",
+  "coverage": 0.025666,
+  "rawCoverage": 0.025701,
+  "cleanup": {
+    "keepRatio": 0.12,
+    "holeRatio": 0.02,
+    "islandsDropped": 5,
+    "holesFilled": 2,
+    "simplifyPx": 1.5,
+    "tracedVertices": 1406,
+    "keptVertices": 108,
+    "rings": 1
+  },
+  "outline": {
+    "width": 1536,
+    "height": 1536,
+    "path": "M860 794L874 798L877 804L880 802L889 804L894 802L898 796L910 797L911 802L914 804L914 810L909 811L907 814L914 821L918 822L921 828L923 846L929 860L931 879L941 921L951 946L954 976L951 986L939 991L937 995L932 996L930 999L930 997L925 996L916 989L908 991L905 988L898 990L895 987L880 984L861 986L855 983L849 986L843 983L842 985L837 985L837 995L834 1000L832 974L835 973L832 973L830 966L814 962L809 965L803 963L762 966L749 964L739 967L731 965L721 966L718 970L714 967L709 967L707 970L700 967L698 971L692 973L692 977L684 978L681 984L674 982L668 986L663 983L660 988L655 988L654 990L652 987L646 987L643 990L637 989L629 993L595 993L587 990L583 985L584 965L581 958L581 949L590 940L594 908L599 897L611 842L620 823L620 818L629 806L637 803L644 805L647 801L654 802L654 800L662 796L677 795L689 797L761 796L766 798L769 805L772 806L776 802L783 803L783 801L790 797L809 795L834 795L841 797Z"
+  },
+  "preview": "inside-gpu-return-desk.preview.jpg"
+}
