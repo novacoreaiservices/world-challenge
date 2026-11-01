@@ -1,0 +1,57 @@
+{
+  "key": "control-room-dive-gpu",
+  "place": "control-room",
+  "object": "dive-gpu",
+  "model": "sam3_image_segment_bf16",
+  "prompt": {
+    "points": [
+      {
+        "x": 0.5,
+        "y": 0.8,
+        "label": "positive"
+      },
+      {
+        "x": 0.44,
+        "y": 0.75,
+        "label": "positive"
+      },
+      {
+        "x": 0.5,
+        "y": 0.55,
+        "label": "negative"
+      }
+    ],
+    "threshold": 0.5,
+    "multimask": true,
+    "maxInstances": 1
+  },
+  "inputsHash": "38b36755d042ecbf39a7dda1e6741b25468965c25a2be0213e35e1b7120a4fba",
+  "stillSha256": "c4f3080a5f136218b3f4fcd4865f6eec280a67734f08f8a6d1fb344dcffb6ea1",
+  "width": 1536,
+  "height": 1536,
+  "status": "completed",
+  "startedAt": "2026-10-31T18:27:52.293Z",
+  "projectId": "A3C54358-A713-42BE-AA93-11415099D606",
+  "appId": "sogni-worlds-kit-d8f6ad24-13fa-4f37-87aa-b3aa25cd063a",
+  "pid": 5556,
+  "completedAt": "2026-10-31T18:28:04.625Z",
+  "maskSha256": "c0294110443da227f8b2db0f6f566e789737945886598f73e34885d26101ff03",
+  "coverage": 0.006533,
+  "rawCoverage": 0.006792,
+  "cleanup": {
+    "keepRatio": 0.12,
+    "holeRatio": 0.02,
+    "islandsDropped": 15,
+    "holesFilled": 4,
+    "simplifyPx": 1.5,
+    "tracedVertices": 1124,
+    "keptVertices": 105,
+    "rings": 2
+  },
+  "outline": {
+    "width": 1536,
+    "height": 1536,
+    "path": "M662 1101L672 1103L682 1101L684 1112L692 1111L694 1114L699 1113L701 1110L707 1113L714 1109L715 1105L718 1104L720 1106L719 1120L717 1121L718 1129L713 1133L715 1137L712 1154L715 1159L715 1189L697 1192L695 1190L685 1192L675 1189L656 1192L641 1192L632 1189L607 1189L599 1191L593 1187L597 1182L595 1179L592 1179L590 1183L587 1183L585 1180L581 1180L580 1183L578 1182L578 1176L596 1172L610 1158L614 1162L619 1160L617 1139L618 1114L621 1105L638 1107L644 1104L654 1112L655 1109L662 1107ZM771 1163L779 1163L781 1165L779 1171L787 1173L790 1192L811 1193L815 1191L823 1195L823 1204L816 1217L818 1228L817 1247L811 1251L803 1249L786 1251L721 1248L718 1246L720 1229L716 1224L721 1220L724 1211L728 1209L724 1204L725 1200L729 1198L726 1191L730 1189L730 1185L733 1183L738 1186L738 1189L743 1184L750 1189L752 1184L756 1183L759 1186L759 1190L761 1190L762 1185L766 1182L763 1172L760 1171L757 1178L754 1179L751 1174L746 1172L742 1165L756 1164L758 1169L762 1170L763 1165Z"
+  },
+  "preview": "control-room-dive-gpu.preview.jpg"
+}
