@@ -1,0 +1,52 @@
+{
+  "key": "control-room-rookie-desk",
+  "place": "control-room",
+  "object": "rookie-desk",
+  "model": "sam3_image_segment_bf16",
+  "prompt": {
+    "points": [
+      {
+        "x": 0.5,
+        "y": 0.3,
+        "label": "positive"
+      },
+      {
+        "x": 0.5,
+        "y": 0.55,
+        "label": "negative"
+      }
+    ],
+    "threshold": 0.5,
+    "multimask": true,
+    "maxInstances": 1
+  },
+  "inputsHash": "839962a816732b1403199f19bf3f35e6dc9d368bba94ccccb17a3f2f866581c5",
+  "stillSha256": "c4f3080a5f136218b3f4fcd4865f6eec280a67734f08f8a6d1fb344dcffb6ea1",
+  "width": 1536,
+  "height": 1536,
+  "status": "completed",
+  "startedAt": "2026-10-31T18:26:26.464Z",
+  "projectId": "EDB5A3C5-4358-4713-92BE-6A9311415099",
+  "appId": "sogni-worlds-kit-d8f6ad24-13fa-4f37-87aa-b3aa25cd063a",
+  "pid": 5556,
+  "completedAt": "2026-10-31T18:27:52.213Z",
+  "maskSha256": "55dd8f62b2738164d54688ab5ff7885df65370cf3930ad0e9b41eeabff509f27",
+  "coverage": 0.018393,
+  "rawCoverage": 0.018394,
+  "cleanup": {
+    "keepRatio": 0.12,
+    "holeRatio": 0.02,
+    "islandsDropped": 2,
+    "holesFilled": 0,
+    "simplifyPx": 1.5,
+    "tracedVertices": 1050,
+    "keptVertices": 57,
+    "rings": 1
+  },
+  "outline": {
+    "width": 1536,
+    "height": 1536,
+    "path": "M763 420L773 421L779 427L793 433L797 438L826 454L832 460L839 462L867 481L881 487L893 499L893 507L886 525L886 540L881 556L877 558L870 569L825 661L817 667L806 667L804 671L799 671L798 669L791 671L789 667L785 667L783 670L776 670L772 678L766 682L762 679L761 674L751 672L744 666L728 664L722 667L713 665L706 659L706 654L699 648L690 626L676 606L672 591L665 582L661 571L654 561L651 549L648 547L646 523L639 499L643 491L664 482L685 466L696 462L712 449L717 449L721 444Z"
+  },
+  "preview": "control-room-rookie-desk.preview.jpg"
+}
