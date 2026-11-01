@@ -1,0 +1,93 @@
+{
+  "0575debbc2d4eff6a2f2fa81850e1859b265171af75f5ada09db9735e9476e88": {
+    "film": "control-room-loop",
+    "take": 1,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 15:51 EDT: 'Yes do it all'",
+    "at": "2026-10-31T19:52:03.800603+00:00"
+  },
+  "49ccf1f9163bef3c4e1fb2ef654c4d4a700da4d135b9abcd5db2c74d5bdfe829": {
+    "film": "control-room-veteran-bay",
+    "take": 1,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 15:51 EDT: 'Yes do it all'",
+    "at": "2026-10-31T19:52:03.800603+00:00"
+  },
+  "b1fef8a9670b5d14f9c098e14d2920a0a6855253b77e9941e721dc57bf36c8e2": {
+    "film": "fleet-veteran-loop",
+    "take": 1,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "6f26bd7a138098c2ae009b057010745e6a3cb1d7e1fc793ccbefea57a8213b00": {
+    "film": "fleet-survivor-loop",
+    "take": 1,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "1479fdf946a085375a60599a7a44bb5d7b8dda86b8d82598c18eeacaf92efb69": {
+    "film": "control-room-survivor-rack",
+    "take": 1,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "ed8092af836a3e43cd11809b773fef323ec86c9b1cdb10a91df13cd5d5548567": {
+    "film": "control-room-rookie-desk",
+    "take": 1,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "56dadea4470c227ab3ea9f07d637c2ea81f4bc27291a42876daa1ee0c2ae0381": {
+    "film": "control-room-dive-gpu",
+    "take": 1,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "d847f5dbb528f2edba140850e0853f7a16e162ac208aca65569600eaf251e443": {
+    "film": "fleet-veteran-return-desk",
+    "take": 1,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "0596a7852bee68e9af8926d8a01a39b7b69c4ba2c41dc87c00fbdecd766bacb4": {
+    "film": "fleet-survivor-return-desk",
+    "take": 1,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "0ef798e005fec9e444558b3b9aefa33c2a988c36c869e701f0ea47e280086934": {
+    "film": "fleet-rookie-loop",
+    "take": 4,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "affed39715a4158bec7ea88feb9519d40e10a09f0ec6e851c5ab52a64e76fcca": {
+    "film": "fleet-rookie-return-desk",
+    "take": 2,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "2622605fc7c55becded071a51adf317ca6643bb08bb8a1827824447464cf5223": {
+    "film": "inside-gpu-loop",
+    "take": 3,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  },
+  "8bd89e35c1f0f90b8cd219a6c88df0a9d9179ae7930d9c12e84f2f29fc05f645": {
+    "film": "inside-gpu-return-desk",
+    "take": 3,
+    "verdict": "approved",
+    "by": "uzi39 via chat 2026-10-31 18:08 EDT: 'Let's finish' (all takes screened clean, notes on file)",
+    "at": "2026-10-31T22:09:12.275116+00:00"
+  }
+}
