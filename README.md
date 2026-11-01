@@ -1,39 +1,31 @@
-# World Challenge 🌍
+# Sogni Worker World — World Builders Challenge Entry
 
-**Sogni World Builders Challenge entry** — a cinematic, explorable Sogni world about the Novacore GPU worker fleet: the machines that render the worlds.
+**Live:** https://sogni-worker-world.netlify.app  
+**Challenge:** Sogni World Builders Challenge (deadline Nov 8, 2026 23:59 UTC)  
+**Status:** FINALIZED 2026-11-01
 
-- Challenge: [Sogni /Sync Vol. 23](https://blog.sogni.ai/newsletters/23/) — build an original world, all AI content through Sogni, submit a working link.
-- Prizes: 🥇 $300 + 3-mo Unlimited Pro · 🥈 $200 + 2-mo Pro · 🥉 $100 + 1-mo Pro
-- Judged on: creativity · how fun to explore · how well it works
-- **Deadline: November 8, 2026, 23:59 UTC**
+## The World
 
-> The original backup lives at https://novacore-world.netlify.app/ and stays untouched. This repo is the challenge workspace.
+One world, three acts:
+- **Act 1 — The Control Room** (hub): A cyan/magenta mission-control room monitoring the fleet
+- **Act 2 — The Fleet**: Three realms — x870 #462 "The Veteran", x570 #463 "The Survivor", adam5070 #478 "The Rookie"
+- **Act 3 — Inside the GPU**: A silicon canyon journey to the render core
+- **Finale**: The real Sogni disc icon (official logo, bottom-right)
 
-## The world: three acts
+## Specs
 
-1. **The Control Room** (hub) — the winning cyan-and-magenta control-room image as the opening still. Mission control for the fleet; portals out to the other acts.
-2. **The Fleet** — the three rigs as explorable realms: x870 (#462, the veteran), x570 (#463, the survivor), adam5070 (#478, the rookie). Opened from real photos of the actual hardware.
-3. **Inside the GPU** — a silicon-canyon run through a 5070 Ti die to the render core.
+- 6 places, 13 AI-generated films (all via Sogni, MiniMax H3)
+- All hardware depicted as ASUS (operator's actual brand)
+- All AI content generated through Sogni per challenge rules
 
-**Finale:** pull back to reveal the world rendering itself — landing on the official Sogni logo across all the monitors (real brand asset from sogni.ai, composited in post; AI would mangle it).
+## Structure
 
-## Build pipeline
+- `worlds/sogni-worker/world.yaml` — the world plan (places, objects, films)
+- `worlds/sogni-worker/stills/` — the 6 approved stills (1024×1024)
+- `worlds/sogni-worker/review/verdicts.json` — take approvals with SHA-256 pins
 
-Sogni Worlds Kit 0.3.2: photo ingest → agent plan → SAM 3 outlines → MiniMax H3 films → review page (take-level approval) → static player build/export. Each act gets its own take-set and opening still (the generator repaints openings regardless of destination prompts — no shortcuts).
+## Budget
 
-## Timeline
-
-| When | What |
-|---|---|
-| Oct 31 – Nov 1 | Concept lock ✅ · photo shoot · kit workspace setup |
-| Nov 2 – 3 | Act 1 take-set (Control Room) |
-| Nov 4 | Act 2 take-sets (Fleet realms) |
-| Nov 5 | Act 3 take-set (Inside the GPU) |
-| Nov 6 | Review + take approvals + fix passes |
-| Nov 7 | Build/export + playtest |
-| Nov 8 | Submit working link + X post (@Sogni_Protocol) |
-
-## Rules of the build
-
-- No paid generation without explicit per-take-set approval, exact price shown first.
-- All AI imagery/video through Sogni. The Sogni logo finale is a brand-asset overlay, not AI content.
+- Approved: 10,000 SOGNI + 50 premium spark
+- Spent: ~301 Spark on films + 166 Spark on 2 failed finale takes
+- Final balances: ~117 Spark / 250 premium / 342 SOGNI
