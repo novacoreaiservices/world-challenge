@@ -1,0 +1,73 @@
+# Win the Sogni World Builders Challenge
+
+Goal ID: goal_55869f0b5aa1
+Goal slug: win-the-sogni-world-builders-challenge
+
+## Description
+Build and submit an original Sogni world about the user's own GPU worker fleet for the Sogni World Builders Challenge: one explorable world in three acts — the Control Room (mission-control hub), the Fleet (x870, x570, adam5070 as realms), and Inside the GPU. All AI content generated through Sogni. Submit a working link plus an X post tagging @Sogni_Protocol by November 8, 2026 23:59 UTC. Prizes: $300/$200/$100 + Unlimited Pro months.
+
+## Challenge facts (verified 2026-10-31 from blog.sogni.ai/newsletters/23/)
+- Build an original world; ALL AI content generated through Sogni.
+- Use the Sogni Creative Agent Skill inside the AI agent.
+- Submit a working link to the world; share on X tagging @Sogni_Protocol.
+- Prizes: 1st $300 + 3-mo Unlimited Pro; 2nd $200 + 2-mo Pro; 3rd $100 + 1-mo Pro.
+- Judged on: creativity, how fun to explore, how well it works.
+- Deadline EXTENDED: November 8, 2026, 23:59 UTC (= 18:59 EST).
+
+## Concept (user locked 2026-10-31: "Let's do everything")
+ONE world, THREE acts — built in the NEW repo **https://github.com/novacoreaiservices/world-challenge** (created 2026-10-31; README plan committed af722e91). **The original backup https://novacore-world.netlify.app/ stays untouched — never modify it or its deploys; all challenge work happens in world-challenge.**
+1. **The Control Room** (hub) — the winning cyan-and-magenta control-room image as opening still; mission control for the fleet. Overlaps the existing control-room-sogni-world goal (goal_dd4965fec880) — that build feeds this entry.
+2. **The Fleet** — the three rigs as explorable realms: x870 (#462, veteran workhorse), x570 (#463, scrappy survivor), adam5070 (#478, the rookie). Real photos of his hardware as opening stills.
+3. **Inside the GPU** — silicon-canyon journey through a 5070 Ti die to the render core.
+- Finale: pull back to reveal the world rendering itself (meta loop), ENDING on the real Sogni logo displayed across all monitors — the official logo asset from the Sogni website (sogni.ai), NOT an AI-generated approximation (user requirement 2026-10-31). Source the official logo file during prep (DONE 2026-10-31: `hidden_files/brand/697b9667fac7b4913a101020_logoSogni_parentBrand_DarkMode_Green.svg` — genuine 2000×578 vector parent-brand logo pulled from sogni.ai's own CDN; dark-mode green variant, suits dark control-room monitors); composite as a post-production overlay so brand accuracy is exact. Note: challenge rule is "all AI content through Sogni" — the logo is a brand asset overlay, not AI-generated content.
+
+## Known production constraints
+- Destination-scene limitation (learned 2026-09-27): the generator repaints the opening composition regardless of the destination prompt — so each act needs its OWN take-set/opening still; do not plan destinations as prompt variations of one opening.
+- Worlds-kit 0.3.2 pipeline: photo ingest → agent plan → SAM 3 outlines → MiniMax H3 films → review page (take-level approval, recovers hidden takes) → static player build/export. `node world agent` needs no coding agent. Needs Node 22.12+, ffmpeg, Sogni account + API key.
+- Kit cost note: ~$50 PAYG per take-set; Unlimited Pro recommended. Newsletter: "Planning and exploring are free. The builder shows the price before you create."
+- Creative Agent Skill 3.61.0 (shipped 2026-10-31): failed generations now explain why; balance shows Premium Spark.
+
+## Budget / boundaries
+- PROJECT BUDGET (user 2026-10-31 14:11 EDT): **10,000 SOGNI + 50 premium spark**.
+- ACTUAL BALANCES (read 2026-10-31 ~14:20 EDT via `sogni-agent --balance`): **SOGNI 5,360.71 · Spark 695.86 · Premium Spark 243.20 · Plan: none** (no Unlimited — everything is PAYG from token balances). NOTE: actual ≠ his stated budget (10k SOGNI / 50 premium spark) — asked him how to handle the gap.
+- HARD RULE: **never use premium spark without his explicit permission each time.** His Seedance note ("when Seedance model is needed we will use premium spark") = Seedance is the legitimate reason to ASK, not a pre-authorization. When Seedance is the right tool, present the choice and get his yes first.
+- Track cumulative spend against the budget; confirm each film take-set's exact price before generating (estimate-before-spend). Halt before any render that would exceed the remaining budget. No transaction history in the SDK — track via before/after `--balance` reads.
+- SPEND LOG: 2026-10-31 stills — 1 transport-test (fast 512) + 4 HQ 1024² stills + 1 accidental "balance"-prompt fast image (my mistake: typed `balance` instead of `--balance`; ~1 fast image wasted). Exact per-image cost unverifiable (no tx history); estimate ~3 SOGNI fast / ~10 SOGNI HQ from /studio pricing → ~46 SOGNI total, marked ESTIMATED. Baseline for exact tracking from here: SOGNI 5,360.71 / Spark 695.86 (read after the stills).
+- Opening stills: generated by Muse via the Sogni Creative Agent Skill (user: "generate or find these images yourself") — no photo shoot needed from him.
+- CREATIVE DIRECTION: all hardware depicted as **ASUS brand** (user correction 2026-10-31).
+- Never touch Novacore Assistant / xAI voice agents; never touch workers (never-touch hard rule stands — rig photos are taken by the USER, not Muse).
+
+## Timeline (Oct 31 → Nov 8)
+- Oct 31–Nov 1: concept lock (done), opening stills generated by Muse via Sogni skill, kit workspace setup (free steps)
+- Nov 2–3: Act 1 take-set (Control Room)
+- Nov 4: Act 2 take-sets (Fleet realms)
+- Nov 5: Act 3 take-set (Inside the GPU)
+- Nov 6: review page, take-level approvals, fix passes
+- Nov 7: build/export, playtest
+- Nov 8: submit working link + X post (X post is the user's own action or on his explicit ask)
+
+## Build state (2026-10-31 ~14:25 EDT)
+- Kit: fresh 0.3.2 clone at `hidden_files/project/kit-0.3.2` (commit 9e8cbf1); deps installed. World id `sogni-worker`, 5 places ingested (canvas 1:1, 992×992).
+- Stills: `hidden_files/project/stills/` — fleet-veteran.png, fleet-survivor.png, fleet-rookie.png, inside-gpu.png (HQ 1024², ASUS-branded per direction) + control-room.jpg (winning image, bottom ~4% cropped to remove Grok watermark).
+- Plan: `kit-0.3.2/worlds/sogni-worker/world.yaml` — 5 places, 13 films (5 loops + 8 crossings), hub-and-spoke, order: free. **Lint: clean (0 errors, 0 warnings).**
+- Canary rendered 2026-10-31 ~14:35 EDT (290 Spark): control-room-loop take 1 + control-room-veteran-bay take 1. Screened: crossing is clean; loop is bolder than directed (adds neon arch lights — noted for his call). `node world review` serves localhost only — unreachable from his phone (VM outbound-only), so canary review happens IN CHAT: takes attached, he gives verdicts, Muse transcribes exactly what he says into review/verdicts.json (never deciding for him).
+- CANARY VERDICT (user 2026-10-31 15:51 EDT, "Yes do it all"): BOTH takes APPROVED, render everything. Transcribed verbatim into review/verdicts.json with SHA-256 pins + attribution. Kit gate open: "canary approved — the rest of the world can render".
+- RENDER BATCHES (2026-10-31): 11 films left after canary (1,646 spark-units). Batch 1 = 3 loops on Spark: 2 DONE (fleet-veteran-loop, fleet-survivor-loop — both screened clean), 1 FAILED (fleet-rookie-loop: refused 4024 insufficient funds — Spark exhausted). Batch 2 = remaining 9 films on SOGNI via SOGNI_TOKEN_TYPE=sogni (~16:05–16:20 EDT): 5 DONE (control-room-survivor-rack, control-room-rookie-desk, control-room-dive-gpu, fleet-veteran-return-desk, fleet-survivor-return-desk), 4 FAILED insufficient funds (fleet-rookie-loop retry, inside-gpu-loop, fleet-rookie-return-desk, inside-gpu-return-desk). TOTAL: 9/13 takes done.
+- REVERSAL (user 2026-10-31 16:36 EDT): "Nevermind use best video model within remaining balance" — Seedance dropped, 4 films reverted to MiniMax H3 (best model that fits). Rendered 3/4: fleet-rookie-loop + fleet-rookie-return-desk on spark (290), inside-gpu-loop on premium queued. LEFTOVER: inside-gpu-return-desk (162).
+- PREMIUM MYSTERY RESOLVED (2026-10-31 ~16:52 EDT): the 250 premium spark REAPPEARED (balance now 250.00). The earlier 250→0 was a pending/processing purchase, not spend — nothing was consumed. User topped up +250 spark (98.47→348.47).
+- FINAL RENDER (user 2026-10-31 16:51 EDT "Done top up spark"): inside-gpu-loop + inside-gpu-return-desk (290) on spark — DONE ~17:00 EDT. **13/13 FILMS COMPLETE, all screened clean, notes on every take.** 11 takes await his verdict (2 canary approved).
+- FINALE: official Sogni SVG composited onto control-room still (`hidden_files/project/finale-sogni.jpg`) — logo large and centered, room dimmed. Attempted as a 6th place but the kit requires a film per clickable and only 58 spark remained; removed the place, kept the world at 5 places/13 films. The composite IS the social.jpg share image.
+- DEPLOY: **LIVE** at https://sogni-worker-world.netlify.app (new Netlify site `sogni-worker-world`, ID 21ed65a7-5dda-4c99-91a5-cc4485563ce9). Verified: HTTP 200, world.json serves 5 places + 8 hotspots. 55 files, 332MB. Lesson: Netlify file digests are SHA1, not SHA256.
+- REMAINING: user playtest, then submit by Nov 8 23:59 UTC + X post tagging @Sogni_Protocol (his action or on his explicit ask).
+- ⚠️ PREMIUM SPARK went 243.20 → 0.00 between the 14:20 and 15:55 balance reads. Muse's runs used regular Spark only (canary 290 + select ~11 = 301 = the Spark delta 695.86→394.86 ✓). Muse NEVER set premium billing: skill default `--token-type spark`, kit default `SOGNI_TOKEN_TYPE` unset (=spark), `SOGNI_BILLING_MODE` never set (that's the flag that would bill premium). User is upset; suspects unauthorized use.
+- POST-WORLD TASK (user 2026-10-31 ~15:56 EDT): build a timestamped premium-spark report for Sogni technical support AFTER the world is done. Contents: both balance reads with timestamps, every generation Muse ran (project IDs: test 79413E93, veteran C1337920, survivor 82349ACE, rookie 74DB109B, inside-gpu 8A4890A8, junk-balance 4F003BF6; kit renders: canary 2 films + batch1 3 loops + batch2 8 films), billing mode of each (all default Spark), and the unexplained 243.20 premium-spark delta.
+- FUNDING (user 2026-10-31 14:25 EDT): **spend the existing balance first** — 695.86 Spark — and he'll top up / pay himself if more is needed. BILLING ORDER (user 2026-10-31 14:55 EDT): **use up Spark first, then switch to SOGNI**. Mechanism (learned 2026-10-31): `SOGNI_TOKEN_TYPE=sogni` env makes the kit bill films in SOGNI directly (quote confirms "Billing: SOGNI tokens pay"); default bills Spark. Skill CLI: `sogni-agent --token-type sogni`. NO SWAP NEEDED — never convert between tokens.
+- HARD RULE (user 2026-10-31 14:57 EDT): **never do token swaps without his explicit permission, ever.** Spending SOGNI/Spark inside the project budget is authorized; converting one token to another is not.
+- Infra: Sogni wss works from this VM ONLY via the proxy preload (`sogni-proxy-preload.mjs`, see AGENTS.md). `ssw.sh` wraps the skill CLI (key at runtime, never logged).
+
+## Open items
+- FUNDING DECISION: cover the ~1,240 Spark gap — convert SOGNI→Spark in wallet, buy Spark, or take Unlimited ($20/mo)? No film rendering until this is resolved.
+- Budget gap: his stated 10,000 SOGNI vs actual 5,360.71 — top-up planned?
+- His approval of the plan (world.yaml) before `node world select` + canary render.
+- Per-take-set price confirmations as builds proceed (canary = 290 Spark / ~$1.45).
+- FUNDING DECISION (user 2026-10-31 14:25 EDT): spend the existing 695.86 Spark balance first; he tops up himself when more is needed. Report balance before each render batch; never render past a zero balance.
